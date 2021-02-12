@@ -29,6 +29,7 @@ Number::Number(double value)
 }
 
 
+
 Number::operator int ()
 {
     return Value;
@@ -43,6 +44,7 @@ Number::operator double ()
 {
     return (double)Value;
 }
+
 
 
 Number operator + (Number num1, Number num2)
@@ -64,3 +66,133 @@ Number operator / (Number num1, Number num2)
 {
     return Number(num1.Value / num2.Value);
 }
+
+
+
+Number operator + (Number num1, int num2)
+{
+    return Number(num1.Value + num2);
+}
+
+Number operator - (Number num1, int num2)
+{
+    return Number(num1.Value - num2);
+}
+
+Number operator * (Number num1, int num2)
+{
+    return Number(num1.Value * num2);
+}
+
+Number operator / (Number num1, int num2)
+{
+    return Number(num1.Value / num2);
+}
+
+
+Number operator + (int num1, Number num2)
+{
+    return Number(num1 + num2.Value);
+}
+
+Number operator - (int num1, Number num2)
+{
+    return Number(num1 - num2.Value);
+}
+
+Number operator * (int num1, Number num2)
+{
+    return Number(num1 * num2.Value);
+}
+
+Number operator / (int num1, Number num2)
+{
+    return Number(num1 / num2.Value);
+}
+
+
+
+float operator + (Number num1, float num2)
+{
+    return num1.Value + num2;
+}
+
+float operator - (Number num1, float num2)
+{
+    return num1.Value - num2;
+}
+
+float operator * (Number num1, float num2)
+{
+    return num1.Value * num2;
+}
+
+float operator / (Number num1, float num2)
+{
+    return num1.Value / num2;
+}
+
+
+float operator + (float num1, Number num2)
+{
+    return num1 + num2.Value;
+}
+
+float operator - (float num1, Number num2)
+{
+    return num1 - num2.Value;
+}
+
+float operator * (float num1, Number num2)
+{
+    return num1 * num2.Value;
+}
+
+float operator / (float num1, Number num2)
+{
+    return num1 / num2.Value;
+}
+
+
+
+double operator + (Number num1, double num2)
+{
+    return num1.Value + num2;
+}
+
+double operator - (Number num1, double num2)
+{
+    return num1.Value - num2;
+}
+
+double operator * (Number num1, double num2)
+{
+    return num1.Value * num2;
+}
+
+double operator / (Number num1, double num2)
+{
+    return num1.Value / num2;
+}
+
+
+double operator + (double num1, Number num2)
+{
+    return num1 + num2.Value;
+}
+
+double operator - (double num1, Number num2)
+{
+    return num1 - num2.Value;
+}
+
+double operator * (double num1, Number num2)
+{
+    return num1 * num2.Value;
+}
+
+double operator / (double num1, Number num2)
+{
+    return num1 / num2.Value;
+}
+

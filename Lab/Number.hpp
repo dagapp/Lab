@@ -30,6 +30,36 @@ class Number
     friend Number operator - (Number num1, Number num2);
     friend Number operator * (Number num1, Number num2);
     friend Number operator / (Number num1, Number num2);
+    
+    friend Number operator + (Number num1, int num2);
+    friend Number operator - (Number num1, int num2);
+    friend Number operator * (Number num1, int num2);
+    friend Number operator / (Number num1, int num2);
+
+    friend Number operator + (int num1, Number num2);
+    friend Number operator - (int num1, Number num2);
+    friend Number operator * (int num1, Number num2);
+    friend Number operator / (int num1, Number num2);
+    
+    friend float operator + (Number num1, float num2);
+    friend float operator - (Number num1, float num2);
+    friend float operator * (Number num1, float num2);
+    friend float operator / (Number num1, float num2);
+
+    friend float operator + (float num1, Number num2);
+    friend float operator - (float num1, Number num2);
+    friend float operator * (float num1, Number num2);
+    friend float operator / (float num1, Number num2);
+    
+    friend double operator + (Number num1, double num2);
+    friend double operator - (Number num1, double num2);
+    friend double operator * (Number num1, double num2);
+    friend double operator / (Number num1, double num2);
+
+    friend double operator + (double num1, Number num2);
+    friend double operator - (double num1, Number num2);
+    friend double operator * (double num1, Number num2);
+    friend double operator / (double num1, Number num2);
 };
 
 #endif /* Number_hpp */

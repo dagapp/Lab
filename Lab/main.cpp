@@ -21,11 +21,11 @@ int main()
     
     
     Number a;
-    float b = 7;
+    Number b = 7;
     float c = a + b;
     
     printf("%d\n", a);
-    printf("%f\n", b);
+    printf("%d\n", b);
     printf("%f\n", c);
     
     
